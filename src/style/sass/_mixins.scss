@@ -1,0 +1,27 @@
+@mixin respond-to($width){
+  @media only screen and (max-width: $width){
+    @content;
+  }
+}
+
+@mixin flexBox( $display, $justify, $align){
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $color;
+    -moz-box-shadow: inset $top $left $blur $color;
+    box-shadow: inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}

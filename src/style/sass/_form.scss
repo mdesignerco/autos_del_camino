@@ -1,0 +1,11 @@
+.input-group {
+
+  .form-control {
+    border-top: $input-border-width solid $input-group-addon-border-color;
+    border-right: $input-border-width solid $input-group-addon-border-color;
+    border-left: none;
+    border-bottom: $input-border-width solid $input-group-addon-border-color;
+    background: $light-gray;
+  }
+
+}

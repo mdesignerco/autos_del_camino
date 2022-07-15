@@ -1,0 +1,26 @@
+
+.secondary-btn {
+  padding: $padding-btn;
+  min-width: 200px;
+  border-radius: $border-radius;
+  background-color: $white;
+  @include transition( 0.2s ease-in );
+  &:hover {
+    color: $white;
+    background-color: $secundary;
+  }
+}
+
+.primary-btn {
+  padding: $padding-btn;
+  min-width: 200px;
+  color: $white;
+  border-radius: $border-radius;
+  background-color: $primary;
+  @include transition( 0.2s ease-in );
+  &:hover {
+    color: $white;
+    background-color: $secundary;
+    border-color: $secundary;
+  }
+}

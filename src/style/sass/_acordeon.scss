@@ -1,0 +1,35 @@
+@import './variables';
+@import './mixins';
+
+.accordion{
+  @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+  &__heading{
+    position: relative;
+    margin-bottom: 1em;
+    @include box-shadow (10px, 10px, 16px, rgba($primary, 0.04), false);
+    [aria-expanded="false"]{
+      background-color: $light-gray;
+      border: 2px solid $medium-gray;
+      h3 {
+        color: $medium-gray;
+      }
+    }
+    [aria-expanded="true"]{
+      background-color: $primary;
+      h3 {
+        color: $white;
+      }
+    }
+  }
+  &__content {
+    margin: -1em 0.3em 1em 0.3em;
+    border: 2px solid $primary;
+  }
+}
+
+.icon-chevron {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translate(-50%, -50%);
+}

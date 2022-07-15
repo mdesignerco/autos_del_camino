@@ -1,0 +1,15 @@
+.card__wrapper{
+  margin:0;
+  padding:0;
+  list-style: none;
+  &-item{
+    &:nth-child(even){
+      .row{
+        flex-direction: row-reverse;
+        .card__news-see_more{
+          left: 0;
+        }
+      }
+    }
+  }
+}

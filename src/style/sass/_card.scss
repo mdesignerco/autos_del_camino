@@ -1,0 +1,59 @@
+@import './variables';
+@import './mixins';
+
+.card__news {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+  @include respond-to ($medium) {
+    padding: $padding-30;
+    margin-bottom: 1em;
+    background-color: $white;
+    border-radius: $border-radius;
+    @include box-shadow (10px, 10px, 16px, rgba($primary, 0.07), false);
+    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+    .card__news-see_more{
+      opacity: 1;
+    }
+  }
+  &:hover{
+    padding: $padding-30;
+    background-color: $white;
+    border-radius: $border-radius;
+    @include box-shadow (10px, 10px, 16px, rgba($primary, 0.07), false);
+    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+    .card__news-see_more{
+      opacity: 1;
+    }
+  }
+  &-image{
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+  }
+  &-see_more{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    width: 66px;
+    height:59px;
+    padding: $padding-btnS;
+    background-color: $primary;
+    opacity: 0;
+    @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+    img {
+      padding: 0;
+    }
+  }
+
+}
+
+.col-md-6 {
+  padding:0;
+}
