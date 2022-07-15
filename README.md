@@ -13,3 +13,10 @@ View demo on : [Vercel](https://autosdelcamino.vercel.app/)
 Clone this repo and start with you own build
 
 You can find the Logo.ai in ['autos_del_camino/src/assets/images/autos del camino logo.ai'](https://github.com/mdesignerco/autos_del_camino/tree/master/src/assets/images)
+
+##Local VIEW
+1- Clone The respositorio
+2- cd to folder
+3- In folder run "npm install"
+4- run "npm run"
+5- Enjoy
